@@ -1,0 +1,39 @@
+header
+{
+    background-color:azure;
+    width: 10vw;
+    height: 12vh;
+    display:flexbox;
+    justify-content:flex-start;
+    align-items:center;
+    box-shadow: 0 0 .6vh black;
+    border-radius: 50px;
+    border: 1px solid black;
+    color:black;
+}
+
+*
+{
+    color:blueviolet;
+}
+#concepto{
+    color: darkviolet;
+    outline: 2px solid blue;    
+}
+
+h1.definir{
+    color: darkviolet;
+    outline: 2px solid blue;
+}
+
+p.definir{
+    outline: 1px solid blue;
+}
+
+a[href*="youtube"]{
+    background-color:rgb(250, 140, 140);
+}
+
+a[href^="#"]{
+    background-color:rgb(238, 190, 214);
+}

@@ -1,0 +1,13 @@
+header
+{
+    background-color:azure;
+    width: 13vw;
+    height: 13vh;
+    display:inline-flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 0 .6vh black;
+    border-radius: 15px;
+    border: 1px solid black;
+    color:black;
+}

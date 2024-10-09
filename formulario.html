@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pokemon, juegos, entrena">
+    <meta name="description" content="Este apartado es para aquellos que quieren conocer acerca del entrenamiento pokemon."> 
+    <meta name="author" content="ASS">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="stylequiz.css">
+</head>
+<body style="background-color: aliceblue;"> 
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Huevo</a></li>
+                <li><a href="pokemon.html">Pokemón</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="comidas.html">Comidas</a></li>
+                <li><a href="entrenador.html">Entrenador</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h1 style="background-color:aliceblue; color:crimson ; font-size: 40px;">Cuestionario para ser maestro Pokemón </h1>
+    <p>Ingresar los datos necesarios para inscribirte y ser entrenador Pokemón.</p>
+    <small>Los datos en las medallas no son en general, solo de Kanto.</small>
+    <br><br>
+    <main>
+    <article>
+        <form action="">
+            <fieldset>
+                <h2 style="background-color:aliceblue; color:crimson; font-size: 40px;">Informacion personal</h2>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre">
+                <br><br>
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" id="edad">
+                <br><br>
+                <label for="gender">Masculino: </label>
+                <input type="radio" id="masculino" name="gender" value="masculino">
+                <label for="femenino">Femenino: </label>
+                <input type="radio" id="femenino" name="gender" value="femenino">
+                <br><br>
+                <label for="email">Correo electronico: </label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="tel">Telefono: </label>
+                <input type="tel" id="tel" name="tel">
+                <br><br>
+                <label for="date">Fecha de nacimiento: </label>
+                <input type="date" name="date" id="date">
+                <br><br>
+
+                <h3 style="background-color:aliceblue; color:crimson; font-size: 40px;">Preferencias personales</h3>
+                <label for="colorfav">Color favorito: </label>
+                <input type="color" name="colorfav" id="colorfav">      
+                <br><br>
+                <label for="select">Medalla favorita de Kanto: </label>
+                <select name="select" id="select">
+                    <option value="1">Roca</option>
+                    <option value="2">Cascada</option>
+                    <option value="3">Trueno</option>
+                    <option value="4">Arcoiris</option>
+                    <option value="5">Alma</option>
+                    <option value="6">Pantano</option>
+                    <option value="7">Volcan</option>
+                    <option value="8">Tierra</option>
+                </select>
+                <br><br>
+                <label for="datalist">Pokemón favorito: </label>
+                <input list="tipo" id="datalist" name="tipo">
+                <datalist id="tipo">
+                    <option value="ACERO">
+                    <option value="AGUA">
+                    <option value="DRAGON">
+                    <option value="ELECTRICO">
+                    <option value="FANTASMA">
+                    <option value="FUEGO">
+                    <option value="HADA">
+                    <option value="HIELO">
+                    <option value="LUCHA">
+                    <option value="NORMAL">
+                    <option value="PLANTA">
+                    <option value="PSIQUICO">
+                    <option value="ROCA">
+                    <option value="SINIESTRO">
+                    <option value="TIERRA">
+                    <option value="VENENO">
+                    <option value="VOLADOR">
+                </datalist>
+                <br><br>
+
+                <h4 style="background-color:aliceblue; color:crimson; font-size: 40px;">Experiencia inicial del entrenador: </h4>
+                <label for="nivel">Experiencia: </label>
+                <input type="range" name="nivel" id="nivel">
+                <br><br>
+                <label for="select-optgroup">Tipo de pokemón inicial: </label>
+                <select id="select-optgroup" name="select-optgroup">
+                    <optgroup label="Agua">
+                        <option value="Agua">Agua</option>
+                    </optgroup>
+                    <optgroup label="Fuego">
+                        <option value="Fuego">Fuego</option>
+                    </optgroup>
+                    <optgroup label="Planta">
+                        <option value="Planta">Planta</option>
+                    </optgroup>
+                    <optgroup label="Electrico">
+                        <option value="Electrico">Electrico</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for="month">Mes de inicio: </label>
+                <input type="month" id="month" name="month">
+                <br><br>
+                <label for="time">Hora de inicio: </label>
+                <input type="time" id="time" name="time">
+                <br><br>
+                <label for="range">Rango de experiencia actual: </label>
+                <input type="range" id="range" name="range" min="0" max="100">
+                <br><br>
+
+                <h5 style="background-color:aliceblue; color:crimson; font-size: 40px;">Fecha, hora y lugar de registro: </h5>
+                <label for="fecha">Fecha de inicio: </label>
+                <input type="date" name="fecha" id="fecha">
+                <br><br>
+                <label for="datetime">Fecha y hora del registro: </label>
+                <input type="datetime" id="datetime" name="datetime">
+                <br><br>
+                <label for="datetimelocal">Fecha y hora del registro local: </label>
+                <input type="datetime-local" id="datetimelocal" name="datetimelocal">
+                <br><br>
+                <label for="select-multiple">Selecciona tu región: </label>
+                <select id="select-multiple" name="select-multiple" multiple>
+                    <option value="Kanto">Kanto</option>
+                    <option value="Johto">Johto</option>
+                    <option value="Hoenn">Hoenn</option>
+                    <option value="Sinnoh"> Sinnoh </option>
+                    <option value="Teselia"> Teselia </option>
+                </select>
+                <br><br>
+                <h6 style="background-color:aliceblue; color:crimson; font-size: 40px;">Otros datos: </h6>
+                <label for="archivo">Adjuntar la petición de padre(s): </label>
+                <input type="file" name="archivo" id="archivo">
+                <br><br>
+                <label for="url">URL: </label>
+                <input type="url" id="url" name="url">
+                <br><br>
+                <label for="week">Semana: </label>
+                <input type="week" id="week" name="week">
+                <br><br>
+                <label for="image">Enviar imagen del botón: </label>
+                <input type="image" id="image" name="image" src="PIXELEEVEE.PNG" alt="Submit">
+                <br><br>
+                <label for="password">Contraseña para ingresar a su usuario: </label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <label for="search">Search: </label>
+                <input type="search" id="search" name="search">
+                <br><br>
+                <button type="submit">Enviar</button>
+                <br><br>
+                <input type="hidden" name="hidden">
+                <br><br>
+                <label for="textarea">Comentarios: </label>
+                <textarea id="textarea" name="textarea"></textarea>
+                <br><br>
+                <label for="visto">Viste todo: </label>
+                <input type="checkbox" name="visto" id="visto">
+                <br><br>
+                <label for="button">Button: </label>
+                <button type="button">Botón</button>
+                <br><br>
+                <label for="submit">Submit: </label>
+                <input type="submit" id="btnsubmit">
+                <br><br>
+                <label for="reset">Reset: </label>
+                <button type="reset">Restablecer</button>
+                <br><br>
+            </fieldset>
+        </form>
+        <br>
+    </article>
+    <section>Con los datos otorgados se podra participar para ser maestro pokemón.</section>
+    <aside>Consultar previamente con el apoyo de un adulto en caso de ser menor de edad.</aside>
+    </main>
+    <script src="ev2.js"> </script>
+</body>
+<hr>
+<footer>
+    <address>
+        <p>Desarrollado por Arely Sánchez</p>
+        <p>&copy; <time datetime="2024">2024</time> Derechos reservados.</p>
+    </address>
+</footer>
+</html>
