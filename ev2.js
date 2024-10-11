@@ -24,6 +24,7 @@ const search = document.getElementById("search");
 const btnenviar = document.getElementById("btnsubmit");
 const textarea = document.getElementById("textarea");
 const visto = document.getElementById("visto");
+const lenguaje = document.getElementById("lenguaje");
 
 btnenviar.addEventListener("click", e => {
     e.preventDefault(); 
@@ -50,7 +51,8 @@ btnenviar.addEventListener("click", e => {
         password: password.value,
         search: search.value,
         textarea: textarea.value,
-        visto: visto.checked
+        visto: visto.checked,
+        lenguaje: lenguaje.value,
     };
 
     // Enviar los datos a la consola
